@@ -8,11 +8,11 @@ import registerServiceWorker from './registerServiceWorker';
 import redditReducer from './redux/reducers/redditReducer';
 
 let store = createStore(
-    redditReducer,
-    {
-      state: {}
-    },
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  redditReducer,
+  {
+    state: {}
+  },
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 ReactDOM.render(

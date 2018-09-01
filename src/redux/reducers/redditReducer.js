@@ -1,10 +1,10 @@
 export const GET_REDDIT_POSTS = 'deviget/reddit/GET_REDDIT_POSTS';
 
-const redditReducer = (state, action) => {
+const redditReducer = (state = { redditPost: [] }, action) => {
   switch(action.type) {
-    case GET_REDDIT_POSTS: 
-      console.log('reducer: redditReducer');
-      return Object.assign({}, state, { reddit: [] })
+    case GET_REDDIT_POSTS:
+      console.log(action.payload);
+      return Object.assign({}, state, { redditPost: [] })
     default:
       return state;
   }
